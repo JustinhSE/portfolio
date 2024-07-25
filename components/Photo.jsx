@@ -20,13 +20,13 @@ const Photo = () => {
           opacity: 1,
           transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
         }}
-        
+        // something with sizes wthat the image will not show 
         className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute ">
           <Image
-            src="/public/assests/1703955247324.png"
+            fill
+            src="/public/justin1.png"
             priority
             quality={100}
-            fill
             alt=""
             className="object-contain"
           />
