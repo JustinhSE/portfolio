@@ -20,20 +20,19 @@ const Photo = () => {
           opacity: 1,
           transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
         }}
-        // something with sizes wthat the image will not show 
         className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute ">
-          <Image
+          <img
             fill
-            src="/public/justin1.png"
+            src="/justin1.png"
             priority
             quality={100}
+            style={{ float: 'right' }}
             alt=""
             className="object-contain"
           />
-        
         </motion.div>
         <motion.svg 
-        className = 'w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]'
+        className = 'w-[300px] xl:w-[596px] h-[310px] xl:h-[506px]'
         fill = 'transparent'
         viewBox= '0 0 506 506'
         xmlns = 'http://w3/org/2000/svg'
