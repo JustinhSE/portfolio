@@ -30,7 +30,7 @@ const about = {
 const experience = {
   icon: "/assests/resume/badge.svg",
   title: "My experience",
-  description: "Fill me in!",
+  description: "Where have I made an impact?",
   items: [
     {
       image: "/images.png",
