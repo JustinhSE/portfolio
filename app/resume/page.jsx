@@ -9,7 +9,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiFirebase } from "react-icons/si";
 const about = {
   title: "About me",
   description: " Who am I?",
@@ -33,12 +33,14 @@ const experience = {
   description: "Fill me in!",
   items: [
     {
+      image: "/images.png",
       company: "GoDaddy",
       position: "Software Engineering Bootcamp Intern",
       duration: "June 2024 - July 2024 ",
     },
 
     {
+      image: "/ct.png", 
       company: "Cornell Tech",
       position: "Software Engineering Intern",
       duration: "July 2022 - September 2022",
@@ -49,7 +51,7 @@ const experience = {
 const education = {
   icon: "/assests/resume/cap.svg",
   title: "My education",
-  description: "Here is my tech stack! ",
+  description: "Where have I learned? ",
   items: [
     {
       institution: "Stony Brook University",
@@ -70,7 +72,7 @@ const education = {
 };
 const skills = {
   title: "My skills",
-  description: "fill me in! ",
+  description: "Here is my tech stack! ",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -101,8 +103,8 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <SiFirebase />,
+      name: "firebase",
     },
   ],
 };
@@ -155,6 +157,7 @@ const Resume = () => {
                           key={index}
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
+                           <span> <img src = {item.image} alt = {item.company}/> </span>  
                           <span className="text-accent"> {item.duration}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.position}{" "}
