@@ -20,7 +20,7 @@ const projects = [
     title: "project 1",
     description: "N/A",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assests/work/thumb1.png",
+    image: "/pic1.png",
     live: "",
     github: "",
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "project 2",
     description: "N/A",
     stack: [{ name: "next.js" }, { name: "node" }, { name: "react.js" }],
-    image: "/assests/work/thumb2.png",
+    image: "/pic2.jpg",
     live: "",
     github: "",
   },
@@ -40,7 +40,7 @@ const projects = [
     title: "project 3",
     description: "N/A",
     stack: [{ name: "firebase" }, { name: "postgreSQL" }, { name: "CSS" }],
-    image: "/assests/work/thumb3.png",
+    image: "/pic3.jpeg",
     live: "",
     github: "",
   },
@@ -131,7 +131,6 @@ const Work = () => {
                       <Image src = {project.image} fill className='object-cover' alt = '' /> 
                     </div>
                   </div>
-                 slide
                 </SwiperSlide>
               })}
               {/* slider buttons */}
