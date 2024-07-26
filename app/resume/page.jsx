@@ -15,7 +15,7 @@ const about = {
   description: " Who am I?",
   info: [
     { fieldName: "👤 Name ", fieldValue: "Justin Harper " },
-    { fieldName: "📞 Phone ", fieldValue: "(631) 449 5897 " },
+    // { fieldName: "📞 Phone ", fieldValue: "(631) 449 5897 " },
     { fieldName: " 💻 Coding Expertise", fieldValue: "3+ Years " },
     { fieldName: "🎓 Major ", fieldValue: "Computer Science" },
     { fieldName: "🇭🇹 Nationality", fieldValue: "Haitian " },
