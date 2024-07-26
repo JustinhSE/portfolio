@@ -4,21 +4,22 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 7,
-    text: "Top Voice on Linkedin",
+    num: 4,
+    text: "th Generation Missionary",
   },
   {
-    num: 26,
+    num: 7,
+    text: "Time Top Voice on Linkedin",
+  },
+  {
+    num: 14,
     text: "Projects completed",
   },
   {
-    num: 8,
-    text: "Technologies mastered",
-  },
-  {
-    num: 500,
+    num: 254,
     text: "Code commits",
   },
+  
 ];
 const Stats = () => {
   return (
