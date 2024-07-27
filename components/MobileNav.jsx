@@ -42,7 +42,7 @@ const MobileNav = () => {
               Justin<span className='text-accent'> . </span>
             </h1>
           </Link>
-          logo
+          {/* logo */}
         </div>
         <nav className='flex flex-col justify-center items-center gap-8'>
           {links.map((link, index) => {
