@@ -16,34 +16,44 @@ import WorkSliderBtns from '@/components/WorkSliderBtns'
 const projects = [
   {
     num: '01',
-    category: "frontend",
+    category: "Full Stack",
     title: "project 1",
-    description: "N/A",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/pic1.png",
+    description: "Recipe Recommendation System",
+    stack: [{ name: "React.js + Vite" }, { name: "Tailwind CSS" }, { name: "Google Firebase" }, { name: "Cloud Firestore" }, ],
+    image: "/cook.png",
     live: "",
-    github: "",
+    github: "https://github.com/JustinhSE/recipe-recommendation-system",
   },
   {
     num: "02",
-    category: "full stack",
+    category: "Backend",
     title: "project 2",
-    description: "N/A",
-    stack: [{ name: "next.js" }, { name: "node" }, { name: "react.js" }],
-    image: "/pic2.jpg",
+    description: "Google Chrome Extension - Heatmap Generator",
+    stack: [{ name: "JavaScript" }, { name: "Node.js" }, { name: "JSON" }, { name: "CSS 3" },],
+    image: "/heatmap.jpeg",
     live: "",
-    github: "",
+    github: "https://github.com/JustinhSE/GoAnalytics/tree/main",
   },
   {
     num: "03",
-    category: "backend",
+    category: "Robotics/Autonomous",
     title: "project 3",
-    description: "N/A",
-    stack: [{ name: "firebase" }, { name: "postgreSQL" }, { name: "CSS" }],
-    image: "/pic3.jpeg",
+    description: "Data Collection for robotics simulations",
+    stack: [{ name: "Python" }, { name: "ROS" }, { name: "Unity" }, { name: "C#" }, ],
+    image: "/robotics.jpg",
     live: "",
-    github: "",
+    github: "https://github.com/JustinhSE/Data-Collection",
   },
+  // {
+  //   num: "04",
+  //   category: "Robotics/Autonomous",
+  //   title: "project 3",
+  //   description: "Data Collection for robotics simulations",
+  //   stack: [{ name: "Python" }, { name: "Robot Operating System(ROS)" }, { name: "Unity" }, { name: "C#" }, ],
+  //   image: "/robotics.jpg",
+  //   live: "",
+  //   github: "https://github.com/JustinhSE/Data-Collection",
+  // },
 ];
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -89,8 +99,8 @@ const Work = () => {
               <div className="border border-white/20"> </div>
               {/* button */}
               <div className="flex items-center gap-4">
-                {/* live project button */}
-                <Link href={project.live}>
+                {/* live project button - deployed projects */}
+                {/* <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -101,7 +111,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
                 {/* github project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
