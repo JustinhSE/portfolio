@@ -99,7 +99,7 @@ const skills = {
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwind.css",
+      name: "tailwind.CSS",
     },
     {
       icon: <FaNodeJs />,
