@@ -5,11 +5,10 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
-  FaNodeJs,
+  
 } from "react-icons/fa";
 
-import { SiNextdotjs, SiTailwindcss, SiFirebase } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiFirebase } from "react-icons/si";
 const about = {
   title: "About me",
   description: " Who am I?",
@@ -32,6 +31,13 @@ const experience = {
   title: "My experience",
   description: "Where have I made an impact?",
   items: [
+    {
+      image: "/sbu2.png",
+      company: "Stony Brook University",
+      position: "Machine Learing Researcher",
+      duration: "May 2024 - August 2024 ",
+    },
+    
     {
       image: "/images.png",
       company: "GoDaddy",
@@ -102,8 +108,8 @@ const skills = {
       name: "tailwind.CSS",
     },
     {
-      icon: <FaNodeJs />,
-      name: "node.js",
+      icon: <SiTypescript />,
+      name: "TypeScript",
     },
     {
       icon: <SiFirebase />,
