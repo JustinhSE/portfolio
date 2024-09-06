@@ -23,7 +23,7 @@ const Home = () => {
               Welcome to my page! I am excited to see you here, feel free to look around! 
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="https://drive.google.com/file/d/1O9CPdpH2FdjCx64iGT04iuE5uhuRhtYt/view?usp=sharing">
+              <Link href="https://drive.google.com/file/d/1HKjN9Q8LPAtH1ISn3Lu8bPiMyp_UlrXU/view?usp=drivesdk">
                 <Button
                   variant="outline"
                   size="lg"
