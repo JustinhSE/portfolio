@@ -32,6 +32,12 @@ const experience = {
   description: "Where have I made an impact?",
   items: [
     {
+      image: "/wbd.png",
+      company: "Warner Bros. Discovery",
+      position: "Software Engineering Intern",
+      duration: "June 2025 - August 2025",
+    },
+    {
       image: "/sbu2.png",
       company: "Stony Brook University",
       position: "Machine Learing Researcher",
@@ -41,7 +47,7 @@ const experience = {
     {
       image: "/images.png",
       company: "GoDaddy",
-      position: "Software Engineering Bootcamp Intern",
+      position: "Software Engineering Intern",
       duration: "June 2024 - July 2024 ",
     },
 
