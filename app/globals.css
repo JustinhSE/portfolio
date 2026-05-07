@@ -2,20 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Design Tokens ─────────────────────────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-primary:      #1c1c22;
+  --color-surface:      #232329;
+  --color-surface-2:    #27272c;
+  --color-accent:       #00ff99;
+  --color-accent-hover: #00e187;
+  --color-text:         #ffffff;
+  --color-text-muted:   rgba(255, 255, 255, 0.60);
 
-  
+  /* Shadows */
+  --shadow-sm:     0 1px 3px rgba(0, 0, 0, 0.40);
+  --shadow-md:     0 4px 12px rgba(0, 0, 0, 0.50);
+  --shadow-lg:     0 8px 24px rgba(0, 0, 0, 0.60);
+  --shadow-accent: 0 4px 20px rgba(0, 255, 153, 0.15);
 
-@layer base{
-    body{
-        @apply font-primary bg-primary text-white leading-loose;
+  /* Transitions */
+  --duration-fast:  150ms;
+  --duration-base:  250ms;
+  --duration-slow:  400ms;
+  --ease-out:   cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in:    cubic-bezier(0.4, 0.0, 1, 1);
+  --ease-inout: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+  /* Z-index scale */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 20;
+  --z-sticky:  40;
+  --z-modal:   100;
+}
+
+/* ─── Base Styles ────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    @apply font-primary bg-primary text-white;
+    line-height: 1.6;
+  }
+
+  h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  /* Visible focus ring for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Respect reduced-motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
     }
-    h1 {
-        @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
-    }
-    h2 {
-        @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
-    }
-    h3 {
-        @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
-    }
+  }
+}
+
+/* ─── Utility Classes ────────────────────────────────────────────────────────── */
+@layer utilities {
+  .card-hover {
+    transition: transform var(--duration-base) var(--ease-out),
+                box-shadow var(--duration-base) var(--ease-out);
+  }
+  .card-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-lg), var(--shadow-accent);
+  }
 }
